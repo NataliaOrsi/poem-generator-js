@@ -11,39 +11,36 @@
 </head>
 <body>
     <div class="d-flex align-items-end flex-column bd-highlight mb-3">
-        <div class="p-5 bd-highlight">
-            <header>
+        <div class="p-3 bd-highlight p-sm-5">
+            <div class="form-container">
                 <h1>Welcome to the AI Poem Generator</h1>
-            </header>
-
-            <main>
                 <form id="poem-generator-form">
-                    <input type="text" placeholder="Enter the topic to the a poem " autofocus required autocomplete="off" id="user-instructions" />
-                    <input type="submit" value="Submit"/>
+                    <input type="text" placeholder="Enter the topic to the a poem " autofocus required autocomplete="off" id="user-instructions" class="instructions" />
+                    <input type="submit" value="Submit" class="submit-button" />
                 </form>
-                <div id="poem">
-                
-                </div>
-            </main>
-        </div>
-         <footer class="d-flex align-items-end flex-column mr-3">
-            <div>
-                This AI project was coded by
-                    <a href="https://github.com/NataliaOrsi/" target="_blank">Natalia de Mesquita Orsi Vieira</a>
-                    and is
-                    <a
-                    href="https://github.com/NataliaOrsi/poem-generator-js"
-                    target="_blank"
-                    >
-                    open-sourced on GitHub</a
-                    >
-                    and is
-                    <a href="https://poem-generator-js.netlify.app/" target="_blank"
-                    >hosted on Netlify</a
-                    >.
+                <small>i.e: flower, tulips or love</small>
             </div>
-        </footer>
+            <div class="poem hidden" id="poem">     
+        </div>
     </div>
+     <footer class="d-flex align-items-end">
+        <div>
+            This AI project was coded by
+        <a class="links" href="https://github.com/NataliaOrsi/" target="_blank">&nbspNatalia de Mesquita Orsi Vieira</a>
+        &nbspand is
+        <a
+                class="links"
+                href="https://github.com/NataliaOrsi/poem-generator-js"
+                target="_blank"
+                >
+          &nbspopen-sourced on GitHub</a
+        >
+        &nbspand is
+        <a class="links" href="https://poem-generator-js.netlify.app/" target="_blank"
+          >&nbsphosted on Netlify</a
+        >.
+        </div>
+    </footer>
 </body>
 <script src="src/index.js"></script>
 </html>
